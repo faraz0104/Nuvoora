@@ -70,6 +70,7 @@ export const metadata: Metadata = {
   },
   category: 'technology',
   other: { distribution: 'global' },
+  verification: { google: 'YdTgZyfmlsxTux8rIy8F26vMkPtCJ-BFz233p8TedxY' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
