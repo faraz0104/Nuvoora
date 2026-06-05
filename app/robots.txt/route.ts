@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   const text = `User-agent: *
 Disallow:
-Sitemap: https://www.aiagency.studio/sitemap.xml
+Sitemap: https://www.nuvora.studio/sitemap.xml
 `;
 
   return new NextResponse(text, {

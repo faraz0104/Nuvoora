@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const baseUrl = 'https://www.aiagency.studio';
+const baseUrl = 'https://www.nuvora.studio';
 
 export async function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

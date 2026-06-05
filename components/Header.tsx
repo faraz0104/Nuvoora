@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Logo } from '@/components/Logo';
 
 const links = [
+  { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Work', href: '#work' },
   { label: 'Process', href: '#process' },
@@ -17,9 +19,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-surface/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 lg:px-8">
-        <a href="#top" className="font-semibold tracking-[0.18em] text-slate-100/90">
-          AIAgency
-        </a>
+        <Logo />
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
           {links.map((link) => (
