@@ -71,13 +71,13 @@ const twoPathItems = [
 const pricingTiers = [
   {
     name: 'Launch',
-    price: '$12k',
+    price: '$2,999',
     description: 'Best for first-time founders and early validation projects.',
     features: ['Core product strategy', 'Lean UI & UX', '2-week delivery window', 'Async collaboration'],
   },
   {
     name: 'Scale',
-    price: '$22k',
+    price: '$6,999',
     popular: true,
     description: 'For scaling teams that need custom AI apps and integrations.',
     features: ['Advanced AI workflows', 'API & database integration', 'Detailed QA', 'Post-launch tuning'],
