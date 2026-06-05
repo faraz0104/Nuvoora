@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Space_Grotesk, Syne } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const syneFont = Syne({
@@ -76,6 +77,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="scroll-smooth">
       <body className={`${headingFont.variable} ${bodyFont.variable} ${syneFont.variable} font-sans bg-surface text-slate-100`}>
         {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y8LBV50WTG"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y8LBV50WTG');
+          `}
+        </Script>
       </body>
     </html>
   );
