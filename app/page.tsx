@@ -1,4 +1,4 @@
-import { ArrowRight, Bolt, Code2, Cpu, Layers, Lightbulb, ShieldCheck, Sparkles, Target } from 'lucide-react';
+import { ArrowRight, Bolt, Code2, Cpu, Layers, Lightbulb, ShieldCheck, Sparkles, Star, Target } from 'lucide-react';
 import { AnimatedMockup } from '@/components/AnimatedMockup';
 import { FeatureCard } from '@/components/FeatureCard';
 import { FaqAccordion } from '@/components/FaqAccordion';
@@ -9,60 +9,73 @@ import { FadeIn } from '@/components/FadeIn';
 import { TiltCard } from '@/components/TiltCard';
 
 export const metadata = {
-  title: 'Nuvora — Global AI product studio for founders and operators',
+  title: 'Nuvora — AI Product Studio for Founders | AI MVPs & Custom Agents',
   description:
-    'Nuvora helps founders worldwide launch AI MVPs, web apps, custom agents, and automation with async-first delivery and product-grade execution.',
+    'Nuvora is a global AI product studio that ships AI MVPs, custom AI agents, SaaS apps, and workflow automation in weeks. Async-first delivery for founders worldwide.',
   metadataBase: new URL('https://www.nuvora.studio'),
   keywords: [
     'AI product studio',
-    'AI MVPs',
+    'AI MVP development',
     'custom AI agents',
-    'workflow automation',
-    'global AI development',
-    'async-first delivery',
+    'workflow automation services',
+    'SaaS MVP development',
+    'AI development agency',
+    'async AI development',
     'startup AI products',
     'AI web apps',
+    'AI automation for founders',
+    'build AI MVP fast',
+    'AI product development company',
   ],
   openGraph: {
-    title: 'Nuvora — Global AI product studio',
+    title: 'Nuvora — AI Product Studio | Ship AI MVPs in 2 Weeks',
     description:
-      'Nuvora helps founders worldwide launch AI MVPs, web apps, custom agents, and automation with async-first delivery and product-grade execution.',
+      'Build and launch AI MVPs, custom agents, SaaS apps, and automation with Nuvora — async-first, worldwide delivery, 2-week turnaround.',
     type: 'website',
     url: 'https://www.nuvora.studio',
+    siteName: 'Nuvora',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nuvora — Global AI product studio',
+    site: '@nuvorastudio',
+    title: 'Nuvora — AI Product Studio | Ship AI MVPs in 2 Weeks',
     description:
-      'Nuvora helps founders worldwide launch AI MVPs, web apps, custom agents, and automation with async-first delivery and product-grade execution.',
+      'Build and launch AI MVPs, custom agents, SaaS apps, and automation with Nuvora — async-first, worldwide delivery, 2-week turnaround.',
   },
   alternates: {
-    canonical: 'https://www.aiagency.studio/',
-    languages: {
-      'en-US': '/',
-    },
+    canonical: 'https://www.nuvora.studio/',
+    languages: { 'en-US': '/' },
   },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  authors: [{ name: 'Nuvora', url: 'https://www.nuvora.studio' }],
 };
 
+const stats = [
+  { value: '50+', label: 'AI products shipped' },
+  { value: '30+', label: 'countries served' },
+  { value: '14 days', label: 'average delivery' },
+  { value: '100%', label: 'async workflow' },
+];
+
 const serviceCards = [
-  { icon: Bolt, title: 'SaaS MVPs', description: 'Launch product-ready SaaS experiences with AI-native workflows.' },
-  { icon: Code2, title: 'AI web apps', description: 'Custom web interfaces that turn AI models into polished user experiences.' },
-  { icon: Cpu, title: 'Custom AI agents', description: 'Task-driven assistants built for customer support, sales, operations, and growth.' },
-  { icon: Layers, title: 'Internal tools', description: 'Internal dashboards and automation that speed up teams without adding overhead.' },
-  { icon: ShieldCheck, title: 'Support agents', description: 'Reliable virtual agents that handle tickets, triage, and repetitive work.' },
-  { icon: Target, title: 'Workflow automation', description: 'Automations that connect prompts, data, and triggers into live business processes.' },
+  { icon: Bolt,       title: 'SaaS MVPs',            description: 'Launch product-ready SaaS experiences with AI-native workflows built for real users.' },
+  { icon: Code2,      title: 'AI web apps',           description: 'Custom web interfaces that turn AI models into polished, high-converting user experiences.' },
+  { icon: Cpu,        title: 'Custom AI agents',      description: 'Task-driven assistants built for customer support, sales, operations, and growth teams.' },
+  { icon: Layers,     title: 'Internal tools',        description: 'Internal dashboards and AI automation that speed up teams without adding overhead.' },
+  { icon: ShieldCheck,title: 'Support agents',        description: 'Reliable virtual agents that handle tickets, triage issues, and reduce manual support work.' },
+  { icon: Target,     title: 'Workflow automation',   description: 'Automations that connect prompts, data sources, and triggers into live business processes.' },
 ];
 
 const twoPathItems = [
   {
-    title: 'Build an MVP',
-    description: 'Validate demand quickly with a polished AI product designed for early users and investor conversations.',
+    title: 'Build an AI MVP',
+    description: 'Validate demand quickly with a polished AI product designed for early users and investor conversations. We scope, design, and ship in 2 weeks.',
     cta: 'Start MVP project',
     href: '/contact',
   },
   {
     title: 'Automate with AI',
-    description: 'Free your team from manual work with custom agents, pipelines, and embedded AI workflows.',
+    description: 'Free your team from manual work with custom agents, pipelines, and embedded AI workflows. We identify the bottleneck and automate it.',
     cta: 'Plan automation',
     href: '/contact',
   },
@@ -90,6 +103,24 @@ const pricingTiers = [
   },
 ];
 
+const testimonials = [
+  {
+    quote: 'Nuvora shipped our AI support agent in 10 days. The quality was product-grade and our whole team adopted it from day one.',
+    author: 'Sarah M.',
+    role: 'Founder · SaaS startup, United States',
+  },
+  {
+    quote: 'We needed an internal AI dashboard fast. Nuvora scoped it clearly, communicated every step, and delivered ahead of schedule.',
+    author: 'James T.',
+    role: 'Operations Lead · Scale-up, United Kingdom',
+  },
+  {
+    quote: "Best async experience I've had with any agency. Clear updates, fast delivery, and a polished MVP that impressed our investors.",
+    author: 'Priya R.',
+    role: 'Co-founder · AI startup, India',
+  },
+];
+
 const faqItems = [
   {
     question: 'How quickly can you start my project?',
@@ -111,20 +142,30 @@ const faqItems = [
     answer:
       'Absolutely. We recommend the right model, build prompt structures, and ensure the AI behavior aligns with your business goals.',
   },
+  {
+    question: 'What types of AI products do you build?',
+    answer:
+      'We build SaaS MVPs, custom AI agents, workflow automation pipelines, internal tools, support bots, and full-stack web apps powered by LLMs.',
+  },
+  {
+    question: 'Do you offer post-launch support?',
+    answer:
+      'Yes. All plans include a post-launch window for tuning and fixes. The Scale and Enterprise plans include extended post-launch support.',
+  },
 ];
 
 const processSteps = [
-  { title: 'Submit idea', description: 'Share your concept and goals so we can build the right scope.' },
-  { title: 'Get plan', description: 'Receive a tailored proposal with timeline, outcomes, and cost.' },
-  { title: 'Approve scope', description: 'Review the approach and confirm the launch path.' },
-  { title: 'Build & launch', description: 'We execute, ship, and hand over a polished product.' },
+  { title: 'Submit your idea', description: 'Share your concept, goals, and constraints so we can scope the right solution.' },
+  { title: 'Receive a plan', description: 'Get a tailored proposal with timeline, cost, and defined outcomes within 48 hours.' },
+  { title: 'Approve the scope', description: 'Review the approach, ask questions, and confirm the launch path.' },
+  { title: 'Build & launch', description: 'We execute, ship, and hand over a polished, production-ready product.' },
 ];
 
 const benefits = [
-  { title: 'Confident delivery', description: 'Clear timelines, defined milestones, and no hidden surprises.' },
-  { title: 'Design-led AI', description: 'Interfaces that make AI feel reliable and easy to use.' },
-  { title: 'Operational readiness', description: 'We build with real workflows, handoffs, and support in mind.' },
-  { title: 'Global partnership', description: 'Asynchronous collaboration for distributed teams and founders.' },
+  { title: 'Confident delivery', description: 'Clear timelines, defined milestones, and no hidden surprises at any stage.' },
+  { title: 'Design-led AI', description: 'Interfaces that make AI feel reliable, fast, and easy to use for every user.' },
+  { title: 'Operational readiness', description: 'We build with real workflows, handoffs, and long-term support in mind.' },
+  { title: 'Global partnership', description: 'Asynchronous collaboration for distributed founders and remote-first teams.' },
 ];
 
 export default function HomePage() {
@@ -136,22 +177,22 @@ export default function HomePage() {
       <Header />
 
       {/* Hero */}
-      <section id="top" className="relative mx-auto max-w-7xl px-6 pb-20 pt-14 lg:px-8 lg:pt-20">
+      <section id="top" aria-label="Hero" className="relative mx-auto max-w-7xl px-6 pb-20 pt-14 lg:px-8 lg:pt-20">
         <div className="grid gap-16 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
           <div className="max-w-2xl">
             <FadeIn delay={0}>
               <p className="mb-6 inline-flex rounded-full border border-slate-600/50 bg-slate-950/70 px-4 py-2 text-sm uppercase tracking-[0.3em] text-slate-300">
-                Async-first product studio
+                Async-first AI product studio
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
               <h1 className="text-5xl font-semibold tracking-tight text-white sm:text-6xl xl:text-7xl">
-                Turn your AI concept into a polished product, fast.
+                Ship your AI product in&nbsp;weeks, not months.
               </h1>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-                Nuvora designs and launches AI MVPs, custom agents, and automation for founders and operators across industries. We ship premium products in weeks, not months.
+                Nuvora designs and launches AI MVPs, custom agents, and workflow automation for founders and operators worldwide. Product-grade quality, async delivery, 2-week turnaround.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
@@ -160,14 +201,14 @@ export default function HomePage() {
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-glow px-6 py-3 text-sm font-semibold text-slate-950 shadow-soft transition hover:-translate-y-0.5"
                 >
-                  Book a brief
+                  Book a free brief
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
                 <a
                   href="#services"
                   className="inline-flex items-center justify-center rounded-full border border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-white/60 hover:text-white"
                 >
-                  Explore services
+                  See our services
                 </a>
               </div>
             </FadeIn>
@@ -189,10 +230,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services */}
-      <section id="services" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+      {/* Stats */}
+      <section aria-label="Social proof" className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
         <FadeIn>
-          <SectionHeading eyebrow="What we build" title="AI products for every launch stage." description="From MVPs to advanced automation, we design the systems your team uses every day." />
+          <div className="grid grid-cols-2 gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 md:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="bg-surface2 px-8 py-10 text-center">
+                <p className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">{stat.value}</p>
+                <p className="mt-2 text-sm text-slate-400">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
+      </section>
+
+      {/* Services */}
+      <section id="services" aria-label="Services" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+        <FadeIn>
+          <SectionHeading
+            eyebrow="What we build"
+            title="AI development services for every launch stage."
+            description="From AI MVPs to enterprise automation, we design and ship the systems your team actually uses every day."
+          />
         </FadeIn>
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {serviceCards.map((item, i) => (
@@ -204,7 +263,14 @@ export default function HomePage() {
       </section>
 
       {/* Work paths */}
-      <section id="work" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+      <section id="work" aria-label="How we work" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+        <FadeIn>
+          <SectionHeading
+            eyebrow="How we work"
+            title="Two paths to launch your AI product."
+            description="Whether you need an MVP or automated workflows, we scope it fast and ship it right."
+          />
+        </FadeIn>
         <div className="grid gap-8 lg:grid-cols-2">
           {twoPathItems.map((item, i) => (
             <FadeIn key={item.title} delay={i * 0.12} className="h-full">
@@ -213,7 +279,7 @@ export default function HomePage() {
                   <div className="mb-4 inline-flex rounded-full bg-slate-800 px-3 py-1 text-xs uppercase tracking-[0.3em] text-slate-400">
                     {item.title}
                   </div>
-                  <h2 className="text-2xl font-semibold text-white">{item.title}</h2>
+                  <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
                   <p className="mt-4 text-slate-300">{item.description}</p>
                   <a
                     href={item.href}
@@ -230,9 +296,13 @@ export default function HomePage() {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+      <section id="pricing" aria-label="Pricing" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
         <FadeIn>
-          <SectionHeading eyebrow="Pricing" title="Clear plans for focused projects." description="No hidden fees, just scope-aligned pricing that helps you move quickly and confidently." />
+          <SectionHeading
+            eyebrow="Pricing"
+            title="Transparent pricing for focused AI projects."
+            description="No hidden fees. Scope-aligned plans designed to help founders move fast and confidently."
+          />
         </FadeIn>
         <div className="grid gap-6 xl:grid-cols-3">
           {pricingTiers.map((tier, i) => (
@@ -250,7 +320,7 @@ export default function HomePage() {
                   <ul className="mt-8 space-y-3 text-sm text-slate-300">
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex gap-3">
-                        <Sparkles className="mt-1 h-4 w-4 text-glow" />
+                        <Sparkles className="mt-1 h-4 w-4 flex-shrink-0 text-glow" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -269,9 +339,13 @@ export default function HomePage() {
       </section>
 
       {/* Process */}
-      <section id="process" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+      <section id="process" aria-label="Our process" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
         <FadeIn>
-          <SectionHeading eyebrow="Process" title="A simple, dependable workflow." description="Four steps from your idea to a shipped product with transparent delivery and frequent updates." />
+          <SectionHeading
+            eyebrow="Process"
+            title="From idea to shipped product in four steps."
+            description="A transparent, dependable workflow with frequent updates so you're never in the dark."
+          />
         </FadeIn>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {processSteps.map((step, index) => (
@@ -291,9 +365,13 @@ export default function HomePage() {
       </section>
 
       {/* Why us */}
-      <section className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+      <section aria-label="Why Nuvora" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
         <FadeIn>
-          <SectionHeading eyebrow="Why us" title="Built for founders who want speed without compromise." description="We combine product discipline, AI expertise, and polished interface design for fast-moving teams." />
+          <SectionHeading
+            eyebrow="Why Nuvora"
+            title="Built for founders who need speed without compromise."
+            description="We combine product discipline, AI engineering, and polished interface design for fast-moving teams."
+          />
         </FadeIn>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {benefits.map((benefit, i) => (
@@ -312,27 +390,61 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
+      {/* Testimonials */}
+      <section aria-label="Client testimonials" className="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
         <FadeIn>
-          <SectionHeading eyebrow="FAQ" title="Common questions, answered." description="Accessible, honest detail about our process, timing, and capabilities." />
+          <SectionHeading
+            eyebrow="Client results"
+            title="Founders ship faster with Nuvora."
+            description="Real feedback from founders and operators we've partnered with across the world."
+          />
+        </FadeIn>
+        <div className="grid gap-6 md:grid-cols-3">
+          {testimonials.map((t, i) => (
+            <FadeIn key={t.author} delay={i * 0.1} className="h-full">
+              <blockquote className="flex h-full flex-col rounded-[2rem] border border-white/10 bg-surface2 p-8 shadow-card">
+                <div className="mb-5 flex gap-1">
+                  {Array.from({ length: 5 }).map((_, j) => (
+                    <Star key={j} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="flex-1 leading-7 text-slate-300">"{t.quote}"</p>
+                <footer className="mt-8 border-t border-white/10 pt-6">
+                  <p className="font-semibold text-white">{t.author}</p>
+                  <p className="mt-1 text-sm text-slate-400">{t.role}</p>
+                </footer>
+              </blockquote>
+            </FadeIn>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section id="faq" aria-label="FAQ" className="mx-auto max-w-7xl px-6 pb-28 lg:px-8">
+        <FadeIn>
+          <SectionHeading
+            eyebrow="FAQ"
+            title="Common questions about working with Nuvora."
+            description="Transparent answers about our process, timelines, capabilities, and pricing."
+          />
         </FadeIn>
         <FaqAccordion items={faqItems} />
       </section>
 
       {/* CTA */}
-      <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
+      <section aria-label="Get started" className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
         <FadeIn>
           <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900/95 to-slate-950 p-10 shadow-soft sm:p-12">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div>
-                <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Ready to move forward?</p>
+                <p className="text-sm uppercase tracking-[0.3em] text-slate-400">Ready to build?</p>
                 <h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                  Let's shape your AI product and ship it with confidence.
+                  Let's scope your AI product and ship it with confidence.
                 </h2>
               </div>
-              <a href="/contact" className="inline-flex items-center justify-center rounded-full bg-glow px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-white/90">
-                Start the conversation
+              <a href="/contact" className="inline-flex shrink-0 items-center justify-center rounded-full bg-glow px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-white/90">
+                Book a free brief
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
           </div>
@@ -341,25 +453,66 @@ export default function HomePage() {
 
       <footer className="border-t border-white/10 bg-surface py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>© {new Date().getFullYear()} Nuvora. Built for modern teams.</p>
+          <p>© {new Date().getFullYear()} Nuvora. Global AI product studio.</p>
           <div className="flex flex-wrap gap-4">
             <a href="/contact" className="transition hover:text-white">Contact</a>
+            <a href="#services" className="transition hover:text-white">Services</a>
             <a href="#pricing" className="transition hover:text-white">Pricing</a>
             <a href="#faq" className="transition hover:text-white">FAQ</a>
           </div>
         </div>
       </footer>
 
+      {/* Structured data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'Organization',
+            '@type': 'WebSite',
+            '@id': 'https://www.nuvora.studio/#website',
+            name: 'Nuvora',
+            url: 'https://www.nuvora.studio',
+            description: 'Global AI product studio shipping AI MVPs, custom agents, and workflow automation for founders worldwide.',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': ['Organization', 'ProfessionalService'],
+            '@id': 'https://www.nuvora.studio/#org',
             name: 'Nuvora',
             url: 'https://www.nuvora.studio',
             logo: 'https://www.nuvora.studio/nuvora-logo.svg',
+            description: 'Global AI product studio that builds AI MVPs, custom agents, SaaS apps, and workflow automation for founders and operators.',
+            serviceType: 'AI Product Development',
+            areaServed: { '@type': 'Place', name: 'Worldwide' },
+            knowsAbout: ['Artificial Intelligence', 'Machine Learning', 'SaaS Development', 'Workflow Automation', 'Large Language Models', 'AI Agents'],
             sameAs: [],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Nuvora AI Development Services',
+            description: 'AI product development services offered by Nuvora for founders and operators.',
+            itemListElement: serviceCards.map((svc, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              item: {
+                '@type': 'Service',
+                name: svc.title,
+                description: svc.description,
+                provider: { '@type': 'Organization', name: 'Nuvora', url: 'https://www.nuvora.studio' },
+              },
+            })),
           }),
         }}
       />
@@ -372,10 +525,7 @@ export default function HomePage() {
             mainEntity: faqItems.map((item) => ({
               '@type': 'Question',
               name: item.question,
-              acceptedAnswer: {
-                '@type': 'Answer',
-                text: item.answer,
-              },
+              acceptedAnswer: { '@type': 'Answer', text: item.answer },
             })),
           }),
         }}

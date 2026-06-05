@@ -25,50 +25,58 @@ const bodyFont = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.nuvora.studio'),
   title: {
-    default: 'Nuvora — Global AI product studio',
+    default: 'Nuvora — AI Product Studio | Ship AI MVPs in 2 Weeks',
     template: '%s | Nuvora',
   },
   description:
-    'Nuvora delivers AI MVPs, web apps, custom agents, and automation for founders worldwide with async-first delivery and rapid launch timelines.',
+    'Nuvora is a global AI product studio that builds AI MVPs, custom AI agents, SaaS apps, and workflow automation for founders and operators — async-first, shipped in weeks.',
   keywords: [
     'AI product studio',
     'AI MVP development',
     'custom AI agents',
-    'automation for startups',
-    'async-first delivery',
-    'global AI development',
+    'workflow automation',
+    'SaaS MVP',
+    'AI development agency',
+    'async AI development',
     'AI web apps',
-    'founder-focused AI products',
+    'AI automation for startups',
   ],
+  authors: [{ name: 'Nuvora', url: 'https://www.nuvora.studio' }],
+  creator: 'Nuvora',
+  publisher: 'Nuvora',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
+  },
   openGraph: {
-    title: 'Nuvora — Global AI product studio',
-    description:
-      'Nuvora delivers AI MVPs, web apps, custom agents, and automation for founders worldwide with async-first delivery and rapid launch timelines.',
     type: 'website',
+    siteName: 'Nuvora',
+    title: 'Nuvora — AI Product Studio | Ship AI MVPs in 2 Weeks',
+    description: 'Build and launch AI MVPs, custom agents, and automation with Nuvora — async-first, worldwide delivery.',
     url: 'https://www.nuvora.studio',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nuvora — Global AI product studio',
-    description:
-      'Nuvora delivers AI MVPs, web apps, custom agents, and automation for founders worldwide with async-first delivery and rapid launch timelines.',
-  },
-  authors: [{ name: 'Nuvora', url: 'https://www.nuvora.studio' }],
-  other: {
-    distribution: 'global',
+    site: '@nuvorastudio',
+    creator: '@nuvorastudio',
+    title: 'Nuvora — AI Product Studio | Ship AI MVPs in 2 Weeks',
+    description: 'Build and launch AI MVPs, custom agents, and automation with Nuvora — async-first, worldwide delivery.',
   },
   alternates: {
     canonical: 'https://www.nuvora.studio/',
-    languages: {
-      'en-US': '/',
-    },
+    languages: { 'en-US': '/' },
   },
+  category: 'technology',
+  other: { distribution: 'global' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${headingFont.variable} ${bodyFont.variable} ${syneFont.variable} font-sans bg-surface text-slate-100`}>{children}</body>
+      <body className={`${headingFont.variable} ${bodyFont.variable} ${syneFont.variable} font-sans bg-surface text-slate-100`}>
+        {children}
+      </body>
     </html>
   );
 }
